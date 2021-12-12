@@ -1,28 +1,10 @@
 plugins {
-<<<<<<< HEAD
 	id 'org.springframework.boot' version '2.5.6'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 }
 
-group = 'com.springproj1'
-=======
-	id 'org.springframework.boot' version '2.5.5'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-	id 'java'
-	id "org.sonarqube" version "3.3"
-}
-
-sonarqube {
-	properties {
-		property "sonar.projectKey", "vuusale_bhos-qa-labs2"
-		property "sonar.organization", "vuusale"
-		property "sonar.host.url", "https://sonarcloud.io"
-	}
-}
-
-group = 'com.example'
->>>>>>> b65b6e0 (initial release)
+group = 'com.springprog5'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
@@ -32,16 +14,8 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-<<<<<<< HEAD
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-=======
-	implementation 'junit:junit:4.13.1'
-	implementation 'junit:junit:4.13.1'
-	implementation 'junit:junit:4.13.1'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	implementation 'org.json:json:20180813'
-	implementation "org.springframework.boot:spring-boot-starter-security"
->>>>>>> b65b6e0 (initial release)
+	implementation 'com.google.firebase:firebase-admin:8.1.0'
 }
 
 test {
