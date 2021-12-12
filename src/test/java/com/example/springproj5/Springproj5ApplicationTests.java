@@ -56,7 +56,7 @@ class Springproj5ApplicationTests {
 
         assertEquals("timur", name.getString("stringValue"));
         assertEquals("abbasov", surname.getString("stringValue"));
-        assertEquals("077", phone.getString("stringValue"));
+        assertEquals("777", phone.getString("stringValue"));
 
     }
 }
