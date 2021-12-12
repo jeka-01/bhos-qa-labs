@@ -19,7 +19,7 @@ class Springproj5ApplicationTests {
 
     String FIREBASE_SIGNIN_EMAIL_PASSWORD = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=";
     String FRBS_WEB_API_KEY = System.getenv("FIREBASE_WEB_API_KEY");
-    String FIRESTORE_COLLECTION = "https://firestore.googleapis.com/v1/projects/lab-7-project-3474b/databases/(default)/documents/users/";
+    String FIRESTORE_COLLECTION = "https://firestore.googleapis.com/v1/projects/architecture-d8267/databases/(default)/documents/users/";
 
     TestRestTemplate rTemp = new TestRestTemplate();
 
@@ -28,8 +28,8 @@ class Springproj5ApplicationTests {
         HttpHeaders hdrs = new HttpHeaders();
 
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("email", "shekergedirli@gmail.com");
-        jsonObject.put("password", "123456");
+        jsonObject.put("email", "zeka.abbasov.bhos@gmail.com");
+        jsonObject.put("password", "salam1234");
         jsonObject.put("returnSecureToken", true);
 
         HttpEntity<String> entity = new HttpEntity<>(jsonObject.toString(), hdrs);
@@ -54,9 +54,9 @@ class Springproj5ApplicationTests {
         JSONObject phone = fields.getJSONObject("phone");
 
 
-        assertEquals("Shakar", name.getString("stringValue"));
-        assertEquals("Gadirli", surname.getString("stringValue"));
-        assertEquals("+994999999999", phone.getString("stringValue"));
+        assertEquals("timur", name.getString("stringValue"));
+        assertEquals("abbasov", surname.getString("stringValue"));
+        assertEquals("077", phone.getString("stringValue"));
 
     }
 }
