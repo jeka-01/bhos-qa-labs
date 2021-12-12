@@ -29,7 +29,7 @@ class Springproj5ApplicationTests {
 
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("email", "zeka.abbasov.bhos@gmail.com");
-        jsonObject.put("password", "salam1234");
+        jsonObject.put("password", "salam123");
         jsonObject.put("returnSecureToken", true);
 
         HttpEntity<String> entity = new HttpEntity<>(jsonObject.toString(), hdrs);
