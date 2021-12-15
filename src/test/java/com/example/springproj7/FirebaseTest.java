@@ -59,6 +59,6 @@ public class FirebaseTest {
         data.put("email", System.getenv("FIREBASE_EMAIL"));
         data.put("password", System.getenv("FIREBASE_PASSWORD"));
         data.put("returnSecureToken", "true");
-        return HTTPUtil.post(ApiUrlConstants.FIREBASE_SIGNIN_EMAIL_AND_PASSWORD.concat(System.getenv("FIREBASE_API_KEY")), data);
+        return HTTPUtil.post(ApiUrlConstants.FIREBASE_SIGNIN_EMAIL_AND_PASSWORD.concat(System.getenv("FIREBASE_WEB_API_KEY")), data);
     }
 }
